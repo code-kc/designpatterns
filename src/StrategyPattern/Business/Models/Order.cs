@@ -17,7 +17,7 @@ public class Order
 
     public decimal GetTax()
     {
-        var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
+        string? destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
 
         if (destination == "sweden")
         {
